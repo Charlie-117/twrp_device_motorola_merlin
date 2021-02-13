@@ -1,1 +1,2 @@
 add_lunch_combo omni_merlin-userdebug
+add_lunch_combo omni_merlin-eng

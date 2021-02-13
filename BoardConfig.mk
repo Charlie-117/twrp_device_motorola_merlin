@@ -18,7 +18,7 @@ DEVICE_PATH := device/motorola/merlin
 
 include device/motorola/msm8916-common/BoardConfigCommon.mk
 
-TARGET_KERNEL_CONFIG := merlin_defconfig
+TARGET_KERNEL_CONFIG := merlin-minimal_defconfig
 
 # Partitions
 BOARD_FLASH_BLOCK_SIZE := 131072
@@ -29,3 +29,18 @@ BOARD_USERDATAIMAGE_PARTITION_SIZE := 4865261568 # 4751232 * 1024 mmcblk0p42
 
 # TWRP
 TW_THEME := portrait_hdpi
+
+# SHRP_Variables
+SHRP_PATH := device/motorola/merlin
+SHRP_MAINTAINER := Charlie
+SHRP_DEVICE_CODE := merlin
+SHRP_EXTERNAL := /external_sd
+SHRP_INTERNAL := /sdcard
+SHRP_OTG := /usb_otg
+SHRP_REC_TYPE := Normal
+SHRP_DEVICE_TYPE := A_Only
+SHRP_FLASH := 0
+SHRP_REC := /dev/block/bootdevice/by-name/recovery
+SHRP_EXPRESS := true
+SHRP_DARK := true
+# SHRP_LITE := true
